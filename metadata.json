@@ -1,0 +1,6 @@
+{
+  "name": "NetLab: Ağ ve Network Laboratuvarı",
+  "description": "Ağ konularını öğrenmek için modüler teorik dersler, doğrudan bilgi soruları, etkileşimli terminal ve topoloji destekli çözülebilir lablar ve Docker ile sunucusuz yerel dağıtım platformu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

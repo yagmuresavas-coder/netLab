@@ -1,0 +1,48 @@
+<div class="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans selection:bg-sky-500 selection:text-white">
+  <!-- Top Navigation Bar -->
+  <app-navbar />
+
+  <!-- Main View Container -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+    @switch (state.activeTab()) {
+      @case ('learn') {
+        <app-learn-view />
+      }
+      @case ('quiz') {
+        <app-quiz-view />
+      }
+      @case ('labs') {
+        <app-labs-view />
+      }
+      @case ('tools') {
+        <app-tools-view />
+      }
+      @case ('docker') {
+        <app-docker-hub />
+      }
+    }
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 bg-slate-950/90 py-6 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="font-bold text-slate-400">NetLab Ağ Laboratuvarı</span>
+        <span>•</span>
+        <span>Modüler Teorik & Pratik Eğitim Platformu</span>
+      </div>
+
+      <div class="flex items-center gap-4 text-[11px]">
+        <span class="flex items-center gap-1 text-sky-400">
+          <mat-icon class="text-xs">cloud_off</mat-icon>
+          <span>100% Sunucusuz & Docker Uyumlu</span>
+        </span>
+        <span class="flex items-center gap-1 text-emerald-400">
+          <mat-icon class="text-xs">terminal</mat-icon>
+          <span>Etkileşimli CLI & Topoloji</span>
+        </span>
+      </div>
+    </div>
+  </footer>
+</div>
+
